@@ -1,0 +1,40 @@
+body {
+	font-family: 'Exo', sans-serif;
+}
+
+.logo {
+	font-weight: 300;
+	color: #FDC02F;
+	font-size: 4rem;
+}
+
+.row, .col- {
+	margin:0;
+	padding:0;
+}
+
+.container-fluid{
+	padding: 0;
+	margin: 0;
+}
+
+.splash {
+	background-color: #2B2B2B;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-content {
+	background-color: #2B2B2B;
+	height: 100vh;
+}
+.hr{
+	border: 1px solid #ffffff;
+}
+
+.map {
+	height: 300px;
+	width: 100%;
+	border: 1px solid yellow;
+}
