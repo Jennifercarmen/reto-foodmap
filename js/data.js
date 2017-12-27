@@ -4,7 +4,7 @@ var data = [{
   'address': 'Jr. Bambues 198, La Molina, Lima 15024, Perú',
   'phone': '+51 1 3697297',
   'attention': '12:30 - 23:30',
-  'type': 'Peruana, apto para vegetarianos',
+  'type': 'Peruana',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -13,7 +13,7 @@ var data = [{
   'address': 'Calle 2 de Mayo 298, Lima, Perú',
   'phone': '+51 1 2425957',
   'attention': '12:00 - 23:00',
-  'type': 'Peruana, Latina, Apto para vegetarianos',
+  'type': 'Peruana',
   'money': 'S/.65 - S/.82',
 },
 {
@@ -22,7 +22,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'Peruana',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -31,7 +31,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'China',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -40,7 +40,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'China',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -49,7 +49,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'China',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 { 
@@ -58,7 +58,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'Italiana',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -67,7 +67,7 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'Italiana',
   'money': 'Se acepta efectivo y tarjeta visa',
 },
 {
@@ -76,6 +76,6 @@ var data = [{
   'address': 'Hipolito Unanue 203 Distrito de Miraflores, Lima 15074, Perú',
   'phone': '+51 221 1322',
   'attention': 'Todos los horarios',
-  'type': 'Peruana, Latina, Mariscos, Apto para vegetarianos',
+  'type': 'Italiana',
   'money': 'Se acepta efectivo y tarjeta visa',
 }];
