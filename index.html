@@ -15,6 +15,7 @@
 </head>
 
 <body>
+	<!-- vista splash -->
 	<div class="container-fluid splash">
 		<div class="row">
 			<div class="col-xs-12">
@@ -22,6 +23,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- contenido general -->
 	<div class="container-fluid bg-content">
 		<div class="row">
 			<div class="text-center col-xs-12">
@@ -31,22 +33,33 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62419.68362401557!2d-77.05688072330432!3d-12.096385330453874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+peruana+lima!5e0!3m2!1sen!2spe!4v1513916068977" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62419.68362401557!2d-77.05688072330432!3d-12.096385330453874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+peruana+lima!5e0!3m2!1sen!2spe!4v1513916068977"
+					 frameborder="0" style="border:0" class="map" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="subtitle text-center">Comida cerca de ti</h3>
+				<div class="input-group">
+					<input type="text" class="form-control filter" placeholder="Filtrar restaurantes">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="container-restaurants" class="row">
+		</div>
 	</div>
-
-
-
-
 
 
 	<!-- link jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- link bootstrap minificado CDN -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/data.js"></script>
 	<!-- link a mi código js -->
 	<script src="js/app.js"></script>
 </body>
