@@ -15,7 +15,6 @@ body {
 
 .row, .col- {
 	margin:0;
-	padding:0;
 }
 
 .container-fluid{
@@ -33,7 +32,7 @@ body {
 
 .bg-content {
 	background-color: #2B2B2B;
-	height: 100vh;
+	height: 150vh;
 }
 
 .hr{
@@ -47,38 +46,62 @@ body {
 	padding: 5px;
 }
 
-.img-box {
-	outline: 1px solid red;
-	position: relative;
-	height: 90px;
-	display: flex;
-	justify-content: center;
+.search{
+	margin-bottom: 1em;
 }
 
-.name-restaurant {
-	color: #ffffff;
-	z-index: 5;
+/* clases de imagenes */
+.photo {
+	padding: 5px 3px;
+	margin-bottom: 5px;
+}
+
+.flip {
+	position: relative;
+	transition: all 1s ease;
+	transform: perspective(600px);
+	transform-origin: 100% 50%;
+	transform-style: preserve-3d;
+}
+
+.flip:hover {
+	transform: perspective(500px) rotateY(-180deg) translate(100%);
+}
+
+.flip .flip-2 {
+	transform: rotateY(-180deg);
+}
+
+.flip-1, .flip-2 {
+	width: 100%;
+	height: 8em;
+	border-radius: 5px;
+	border-top: 3px solid #FDC02F;
+	cursor: pointer;
+	backface-visibility: hidden;
+}
+
+.flip-1 {
+	position: relative;
+}
+
+.flip-2 {
+	background-repeat: no-repeat;
 	position: absolute;
-	bottom: 0;
+	top: 0;
+	background-color: #ffffff;
+	border-bottom: 4px solid #FDC02F;
 }
 
 .type-restaurant {
-	color: #ffffff;
-	z-index: 6;
+	color: #2B2B2B;
 	position: absolute;
+	bottom: 0;
+	background-color:rgba(253, 191, 47, 0.8);
+	width: 60%;
+	font-size: .9em;
 }
 
-.overlay {
-	background: rgba(231, 218, 28, 0.5);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 1;
-}
-
-.img-restaurant {
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-	background-size: cover;
+.none {
+	display: none;
 }

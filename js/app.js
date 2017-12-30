@@ -1,10 +1,20 @@
 $(window).ready(function() {
-  $('.splash').delay(3000).fadeOut(1000);
+  $('.bg-content').toggle();
+  setTimeout(function() {
+    $('.splash').fadeOut(1000);
+    $('.bg-content').toggle();
+  }, 3000);
 	
   var container = $('#container-restaurants');
   for (i = 0; i < data.length; i++) {
-    container.append('<div class="collection"><div class="col-xs-4"><div class="img-box"><p class="type-restaurant">' + data[i].type + '</p><p class="name-restaurant">' + data[i].name + '</p><div class="overlay"></div><img class="img-responsive img-restaurant" src=' + data[i].image + '></div></div></div>');
-  }
+    container.append(
+      '<div class="col-xs-4 photo collection text-center flip">' +
+				'<img class="img-responsive flip-1" src = ' + data[i].image + '>' +
+				'<p class="type-restaurant">' + data[i].type + '</p>' +
+				'<img class="img-responsive flip-2" src = ' + data[i].back + '>' +
+			'</div>'
+    );
+  };
 
   $('#search').keyup(function() {
     var name = $(this).val();
@@ -15,5 +25,12 @@ $(window).ready(function() {
         $(this).show();
       }
     });
+  });
+	
+  $('.collection').mouseover(function() {
+    $('p', this).hide();
+  });
+  $('.collection').mouseout(function() {
+    $('p', this).show();
   });
 });
