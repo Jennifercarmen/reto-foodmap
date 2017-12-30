@@ -13,8 +13,9 @@ body {
 	color: #FDC02F;
 }
 
-.row, .col- {
+.row, .col-xs-6 {
 	margin:0;
+	padding: 0;
 }
 
 .container-fluid{
@@ -36,7 +37,11 @@ body {
 }
 
 .hr{
-	border: 1px solid #ffffff;
+	border: 1px solid #FDC02F;
+}
+
+.container-map {
+	padding: 0;
 }
 
 .map {
@@ -105,3 +110,76 @@ body {
 .none {
 	display: none;
 }
+
+.bg-modal {
+	background-color: #FDC02F;
+	border: 1px solid #2B2B2B;
+	font-weight: 300;
+}
+
+.mapa-modal {
+	width: 100%;
+}
+.bg-name {
+	background-color: #2B2B2B;
+	color: #FDC02F;
+}
+.name {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.bg-type {
+	border: 1px solid #2B2B2B;
+	margin-bottom: 1em;
+}
+
+.type {
+	margin: 0;
+	padding: 5px 0;
+}
+
+.icon {
+	border: 1px solid #2B2B2B;
+	padding: 5px;
+	color: #FDC02F;
+	background-color: #2B2B2B;
+	border-radius: 50%;
+	z-index: 1;
+	margin-bottom: 8px;
+}
+
+.modal-header {
+	border-bottom: none;
+	padding: 15px 15px 0 15px;
+}
+
+.modal-body {
+	padding: 5px 15px 15px 15px;
+}
+
+.modal-body .row p.inline-block {
+	margin-bottom: 1.5em;
+}
+
+.modal-hr {
+	position: absolute;
+	border: .5px solid #2B2B2B;
+	width: 90%;
+	top: -6px;
+	margin-left: 5%; 
+}
+
+.btn-modal {
+	background-color: transparent;
+	border: 1px solid #2B2B2B;
+	transition: .5s;
+	font-weight: 300;
+}
+
+.btn-modal:hover {
+	background-color: #2B2B2B;
+	color: #FDC02F;
+}
+
