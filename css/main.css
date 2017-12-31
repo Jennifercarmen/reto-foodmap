@@ -1,18 +1,43 @@
 body {
 	font-family: 'Exo', sans-serif;
+	font-weight: 300;
+}
+
+:root {
+  --yellow: #FDC02F;
+  --dark: #2B2B2B;
 }
 
 .logo {
-	font-weight: 300;
-	color: #FDC02F;
+	font-weight: inherit;
+	color: var(--dark);
 	font-size: 4rem;
 }
 
 .subtitle {
-	font-weight: 300;
-	color: #FDC02F;
+	font-weight: inherit;
+	color: var(--yellow);
+	background-color: var(--dark);
+	z-index: 2;
 }
 
+h4.line::before {
+  content: " ";
+  height: 2px;
+  display: inline-block;
+  background-color: var(--yellow);
+	width: 24%;
+	margin-right: 1rem;
+}
+
+h4.line::after {
+  content: " ";
+  height: 2px;
+  display: inline-block;
+  background-color: var(--yellow);
+	width: 24%;
+	margin-left: 1rem;
+}
 .row, .col-xs-6 {
 	margin:0;
 	padding: 0;
@@ -24,7 +49,7 @@ body {
 }
 
 .splash {
-	background-color: #2B2B2B;
+	background-color: var(--dark);
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -32,23 +57,84 @@ body {
 }
 
 .bg-content {
-	background-color: #2B2B2B;
+	background-color: var(--dark);
 	height: 150vh;
 }
 
+.bg-header {
+	background-color: var(--yellow);
+}
+
+.input-group-addon {
+	background-color: var(--yellow);
+}
+
 .hr{
-	border: 1px solid #FDC02F;
+	border: 1px solid var(--dark);
+	margin-bottom: 0;
+}
+
+/* animacion texto */
+
+.Iam {
+	color:var(--yellow);
+	height: 40px;
+}
+
+.Iam p {
+  float: left;
+	margin-right: 0.5em;
+	background-color: var(--dark);
+	width: 50%;
+	text-align: right;
+	font-weight: inherit;
+	font-size: 1.5em;
+	padding-right: .5em;
+}
+
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+	height: 25px;
+	font-size: 1.5em;
+}
+
+.Iam .innerIam {
+  display: inline-block;
+  color: var(--dark);
+  position: relative;
+	white-space: nowrap;
+	font-weight: 300;
+	top: 0;
+	/*animation*/
+  animation:move 5s;
+  animation-iteration-count:infinite;
+	/*animation-delay*/
+ 	animation-delay:1s;
+}
+
+@keyframes move{
+	0%  { top: 0px; }
+	20% { top: -30px; }
+	40% { top: -60px; }
+	60% { top: -90px; }
 }
 
 .container-map {
 	padding: 0;
 }
 
+.margin-map {
+	margin-top: 9em;
+}
+
 .map {
 	width: 100%;
 	height: 150px;
-	outline: 1px solid #FDC02F;
+	outline: 1px solid var(--yellow);
 	padding: 5px;
+	margin-top: 1em;
 }
 
 .search{
@@ -80,8 +166,7 @@ body {
 .flip-1, .flip-2 {
 	width: 100%;
 	height: 8em;
-	border-radius: 5px;
-	border-top: 3px solid #FDC02F;
+	border-top: 3px solid var(--yellow);
 	cursor: pointer;
 	backface-visibility: hidden;
 }
@@ -95,14 +180,14 @@ body {
 	position: absolute;
 	top: 0;
 	background-color: #ffffff;
-	border-bottom: 4px solid #FDC02F;
+	border-bottom: 4px solid var(--yellow);
 }
 
 .type-restaurant {
-	color: #2B2B2B;
+	color: var(--dark);
 	position: absolute;
 	bottom: 0;
-	background-color:rgba(253, 191, 47, 0.8);
+	background-color:var(--yellow);
 	width: 60%;
 	font-size: .9em;
 }
@@ -112,17 +197,18 @@ body {
 }
 
 .bg-modal {
-	background-color: #FDC02F;
-	border: 1px solid #2B2B2B;
+	background-color: var(--yellow);
+	border: 1px solid var(--dark);
 	font-weight: 300;
 }
 
 .mapa-modal {
 	width: 100%;
 }
+
 .bg-name {
-	background-color: #2B2B2B;
-	color: #FDC02F;
+	background-color: var(--dark);
+	color: var(--yellow);
 }
 .name {
 	font-size: 1.5em;
@@ -131,7 +217,7 @@ body {
 }
 
 .bg-type {
-	border: 1px solid #2B2B2B;
+	border: 1px solid var(--dark);
 	margin-bottom: 1em;
 }
 
@@ -141,10 +227,10 @@ body {
 }
 
 .icon {
-	border: 1px solid #2B2B2B;
+	border: 1px solid var(--dark);
 	padding: 5px;
-	color: #FDC02F;
-	background-color: #2B2B2B;
+	color: var(--yellow);
+	background-color: var(--dark);
 	border-radius: 50%;
 	z-index: 1;
 	margin-bottom: 8px;
@@ -165,21 +251,27 @@ body {
 
 .modal-hr {
 	position: absolute;
-	border: .5px solid #2B2B2B;
+	border: .5px solid var(--dark);
 	width: 90%;
 	top: -6px;
 	margin-left: 5%; 
 }
 
+.subtitle-hr {
+	position: absolute;
+	border: 1px solid var(--yellow);
+	width: 90%;
+	top: 15px;
+}
+
 .btn-modal {
 	background-color: transparent;
-	border: 1px solid #2B2B2B;
+	border: 1px solid var(--dark);
 	transition: .5s;
 	font-weight: 300;
 }
 
 .btn-modal:hover {
-	background-color: #2B2B2B;
-	color: #FDC02F;
+	background-color: var(--dark);
+	color: var(--yellow);
 }
-
