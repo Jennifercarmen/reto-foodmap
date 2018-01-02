@@ -23,108 +23,108 @@
       </div>
     </div>
   </div>
-	<!-- contenido general -->
-	<div class="container-fluid bg-content">
-		<div class="row">
-			<div class="text-center col-xs-12 bg-header navbar-fixed-top">
-				<h2 class="logo">Foodmap</h2>
-				<hr class="hr">
-				<div class="Iam">
-					<p>Comida</p>
-					<b>
-						<div class="innerIam">
-							cerca de ti
-							<br /> peruana
-							<br /> italiana
-							<br /> china
-						</div>
-					</b>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 margin-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62419.68362401557!2d-77.05688072330432!3d-12.096385330453874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+peruana+lima!5e0!3m2!1sen!2spe!4v1513916068977"
+  <!-- contenido general -->
+  <div class="container-fluid bg-content">
+    <div class="row">
+      <div class="text-center col-xs-12 bg-header navbar-fixed-top">
+        <h2 class="logo">Foodmap</h2>
+        <hr class="hr">
+        <div class="Iam">
+          <p>Comida</p>
+          <b>
+            <div class="innerIam">
+              cerca de ti
+              <br /> peruana
+              <br /> italiana
+              <br /> china
+            </div>
+          </b>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 margin-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62419.68362401557!2d-77.05688072330432!3d-12.096385330453874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+peruana+lima!5e0!3m2!1sen!2spe!4v1513916068977"
 				 frameborder="0" style="border:0" class="map" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<h4 class="subtitle text-center line">Comida cerca de ti</h4>
-				<div class="input-group search">
-					<input id="search" type="text" class="form-control" placeholder="Filtrar restaurantes">
-					<div class="input-group-addon">
-						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="container-restaurants" class="container"></div>
-	</div>
-	<!-- modal -->
-	<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content bg-modal">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span class="close" aria-hidden="true">&times;</span>
-					</button>
-					<div class="row">
-						<div class="col-xs-12 container-map">
-							<img src="assets/images/mapa-modal.png" alt="mapa" class="img-responsive mapa-modal">
-						</div>
-					</div>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-xs-12 text-center bg-name">
-							<p class="name text-capitalize"></p>
-						</div>
-						<div class="col-xs-12 text-center bg-type">
-							<p class="type"></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 text-center">
-							<span class="glyphicon glyphicon-earphone icon" aria-hidden="true"></span>
-							<hr class="modal-hr">
-							<p class="phone inline-block"></p>
-						</div>
-						<div class="col-xs-6 text-center">
-							<span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>
-							<hr class="modal-hr">
-							<p class="address inline-block"></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 text-center">
-							<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
-							<hr class="modal-hr">
-							<p class="money inline-block"></p>
-						</div>
-						<div class="col-xs-6 text-center">
-							<span class="glyphicon glyphicon-time icon" aria-hidden="true"></span>
-							<hr class="modal-hr">
-							<p class="attention inline-block"></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<button type="submit" class="btn btn-default center-block btn-modal text-uppercase">Pedir ahora</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- link jQuery CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- link bootstrap minificado -->
-	<script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-	<!-- link a la data -->
-	<script src="js/data.js"></script>
-	<!-- link a mi código js -->
-	<script src="js/app.js"></script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 class="subtitle text-center line">Comida cerca de ti</h4>
+        <div class="input-group search">
+          <input id="search" type="text" class="form-control" placeholder="Filtrar restaurantes">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container-restaurants" class="container"></div>
+  </div>
+  <!-- modal -->
+  <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-modal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close" aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-xs-12 container-map">
+              <img src="assets/images/mapa-modal.png" alt="mapa" class="img-responsive mapa-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12 text-center bg-name">
+              <p class="name text-capitalize"></p>
+            </div>
+            <div class="col-xs-12 text-center bg-type">
+              <p class="type"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 text-center">
+              <span class="glyphicon glyphicon-earphone icon" aria-hidden="true"></span>
+              <hr class="modal-hr">
+              <p class="phone inline-block"></p>
+            </div>
+            <div class="col-xs-6 text-center">
+              <span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>
+              <hr class="modal-hr">
+              <p class="address inline-block"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 text-center">
+              <span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+              <hr class="modal-hr">
+              <p class="money inline-block"></p>
+            </div>
+            <div class="col-xs-6 text-center">
+              <span class="glyphicon glyphicon-time icon" aria-hidden="true"></span>
+              <hr class="modal-hr">
+              <p class="attention inline-block"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="submit" class="btn btn-default center-block btn-modal text-uppercase">Pedir ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- link jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- link bootstrap minificado -->
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!-- link a la data -->
+  <script src="js/data.js"></script>
+  <!-- link a mi código js -->
+  <script src="js/app.js"></script>
 </body>
 
 </html>
