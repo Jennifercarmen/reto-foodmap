@@ -13,6 +13,11 @@ body {
 	color: var(--dark);
 	font-size: 4rem;
 }
+.splash-logo {
+	font-weight: inherit;
+	color: var(--yellow);
+	animation: blurFadeInOut 3s ease-in backwards;
+}
 
 .subtitle {
 	font-weight: inherit;
@@ -275,3 +280,47 @@ h4.line::after {
 	background-color: var(--dark);
 	color: var(--yellow);
 }
+/* una forma de efecto splash con css */
+/*
+@keyframes blurFadeInOut{
+	0%{
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	20%,75%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+@keyframes blurFadeIn{
+	0%{
+		opacity: 0;
+		transform: scale(1.3);
+	}
+	50%{
+		opacity: 0.5;
+		transform: scale(1.1);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes fadeInBack{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	50%{
+		opacity: 0.4;
+		transform: scale(2);
+	}
+	100%{
+		opacity: 0.2;
+		transform: scale(5);
+	}
+}*/

@@ -1,10 +1,12 @@
 $(window).ready(function() {
+  // splash
   $('.bg-content').toggle();
   setTimeout(function() {
     $('.splash').fadeOut(1000);
     $('.bg-content').toggle();
-  }, 3000);
+  }, 5000);
 	
+  // recorrer la data y crear imagenes
   var container = $('#container-restaurants');
   for (i = 0; i < data.length; i++) {
     var grupo = 
@@ -16,6 +18,7 @@ $(window).ready(function() {
     container.append(grupo);
   };
 
+  // filtro
   $('#search').keyup(function() {
     var name = $(this).val();
     $('.collection').hide();
@@ -27,6 +30,7 @@ $(window).ready(function() {
     });
   });
 
+  // modal
   $('.content').click(function() {
     var name = $(this).data('name'),
     	address = $(this).data('address'),
@@ -42,6 +46,12 @@ $(window).ready(function() {
     $('.type').text(type);
   });
 	
+  $('.close').click(function() {
+    $('#search').val('');
+    $('.collection').show();
+  });
+	
+  // mouseover
   $('.collection').mouseover(function() {
     $('p', this).hide();
   });
